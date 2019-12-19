@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Tetris</title>
+  </head>
+  <body>
+    <div id="start">
+      <div>
+        <div>
+          <img class="startImage" src="background-tetris.jpg"></img>
+        </div>
+        <div class="startContainerNoOpacity">
+        <h3 class="title">
+          TETRIS
+        </h3>
+        <button id="startButton">Start</button>
+        <h5 class="subtitle">by Stefanos</h5>
+      </div>
+        <img class="startContainer" src="start-background.jpg" />
+      </div>
+    </div>
+
+    <div class="timer" id="timer">
+      <div class="overlay"></div>
+      <div class="timerText">3</div>
+    </div>
+    <div class="timer" id="timer2">
+      <div class="overlay"></div>
+      <div class="timerText">2</div>
+    </div>
+    <div class="timer" id="timer3">
+      <div class="overlay"></div>
+      <div class="timerText">1</div>
+    </div>
+    <div id="textWelcome">
+      <div>⬆️ Rotate</div>
+      <div>➡️ Move Right</div>
+      <div>⬅️ Move Left</div>
+      <div>⬇️ Move Down</div>
+    </div>
+    <div id="welcomeCard">
+      <div id="close">X</div>
+    </div>
+    <div class="scoreContainer">
+      Score:
+      <div id="scoreNum">0</div>
+    </div>
+    <img id="gameOver" src="game-over.jpg" />
+    <button id="playAgain">play again?</button>
+    <canvas id="myCanvas" width="300" height="600"></canvas>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="tetris.js"></script>
+  </body>
+</html>
